@@ -6,7 +6,7 @@ For solving the problem of coding challenge, microservice architecture is used. 
 2. [Logic](#logic)
 3. [Troop Manager](#troop-manager)
 
-I have tried to use plain Javascript in order to keep the code simple. Also Typescript is not used to keep the ability of javascript dynamic type. for instance logic manager can handle an anonymous object type as `troop information` object. Each part of application can be replaced easily without any impact on stablity. Gateway (integration and orchestration), Logic (decision making) and Troop manager (available troop types & troop information) can be updated and deployed without downtime.
+I have tried to use plain Javascript in order to keep the code simple. Also Typescript is not used to keep the ability of javascript dynamic type. for instance logic manager can handle an anonymous object type as `troop information` object. Each part of application can be replaced easily without any impact on stability. Gateway (integration and orchestration), Logic (decision making) and Troop manager (available troop types & troop information) can be updated and deployed without downtime.
 
 # Gateway
 
@@ -15,6 +15,8 @@ Gateway microservice is used to manage external APIs and works as orchestration 
 1. get the number of available troops from troop manager microservice.
 2. call logic manager API and provide `available troops information` + `number of army` parameters to create an army based on the login inside logic manager microservice.
 3. return the result of API.
+
+![diagram](/gateway/assets/scenario.png)
 
 # Logic
 

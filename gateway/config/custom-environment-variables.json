@@ -1,0 +1,6 @@
+{
+	"services": {
+		"logic": "SERVICE_LOGIC",
+		"troop-manager": "SERVICE_TROOP_MANAGER"
+	}
+}

@@ -1,0 +1,7 @@
+{
+	"name": "gateway-api",
+	"script": "index.js",
+	"instances": 1,
+	"exec_mode": "cluster",
+	"instance_var": "INSTANCE_ID"
+}

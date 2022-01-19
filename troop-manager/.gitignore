@@ -1,0 +1,6 @@
+/node_modules
+log/*.log
+log/*.log.gz
+log/*.json
+coverage/
+config/docker-env*

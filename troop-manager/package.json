@@ -1,0 +1,50 @@
+{
+	"name": "troop-manager",
+	"version": "0.0.1",
+	"description": "Troopp Manager",
+	"main": "index.js",
+	"directories": {
+		"doc": "docs",
+		"test": "test"
+	},
+	"scripts": {
+		"start": "node index.js",
+		"debug": "NODE_ENV=debug DEBUG=app:debug nodemon ",
+		"lint": "node_modules/.bin/eslint modules",
+		"test": "NODE_ENV=test nyc mocha --exit ./tests/*.test.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"authors": [
+		{
+			"name": "Amin Serajfard",
+			"email": "aminserajfard@gmail.com"
+		}
+	],
+	"license": "ISC",
+	"bugs": {
+		"url": "http://.../issues"
+	},
+	"homepage": "http://...#readme",
+	"dependencies": {
+		"config": "^3.1.0",
+		"cors": "^2.8.5",
+		"debug": "^4.1.1",
+		"express": "^4.17.1",
+		"express-async-errors": "^3.1.1",
+		"http": "^0.0.1-security",
+		"joi": "^17.4.2",
+		"moment": "^2.24.0",
+		"nodemon": "^2.0.15",
+		"nyc": "^15.1.0"
+	},
+	"devDependencies": {
+		"babel-eslint": "^10.1.0",
+		"chai": "^4.3.4",
+		"chai-http": "^4.3.0",
+		"eslint": "^8.2.0",
+		"mocha": "^9.1.3"
+	}
+}
